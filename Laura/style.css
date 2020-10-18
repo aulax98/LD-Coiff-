@@ -1,70 +1,65 @@
-header > ul{
-    background-color: white;
+header > section > ul{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     list-style: none;
-    justify-content: space-around;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    margin-top: -7.5%;
+    font-size: 20px;
 }
 
-header > section{
-    text-align: center;
-    font-family: normal normal normal, sans-serif;
-}
-
-header > Section > h1{
-    font-size: 40px;
-    letter-spacing: 0.3em;
-}
-
-header > Section > h3{
-    letter-spacing: 0.4em;
-    margin-top: 80px;
-}
-
-header > ul > li > a{
-    text-decoration: none;
+header > section > ul > li > a{
     color: black;
-    transition: .4s;
+    transition: .5s;
     font-style: italic;
     font-weight: bold;
 }
 
-header > ul > li > a:hover{
-    color: rgb(161, 156, 156);
-    transition: .4s;
+header > section > ul > li > a:hover{
+    color: grey;
+    transition: .5s;
+    text-decoration: none;
 }
 
-header {
-    position: sticky;
+header > section > h1, h3{
+    text-align: center;
 }
 
 .jumbotron{
     background: url(Screenshot_20201018-182935_Gallery.jpg) no-repeat center;
-    height: 70vh;
+    height: 50vh;
     width: 100vw;
     border-radius: 0;
     position: fixed;
-    z-index: -1000;
-    margin: auto;
+    z-index: -1;
 }
 
 main{
-    z-index: 1;    
     display: block;
     width: 99.2vw;
     background-color: white;
     margin-top: 75vh;
-    padding: 10%;
     padding-top: 50px;
 }
 
+#TarifH{
+    box-shadow: rgb(80, 80, 80) 5px 5px 5px;
+    z-index: 2;
+}
 
+#TarifF{
+    box-shadow: rgb(80, 80, 80) -5px 5px 5px;
+}
+
+#imgh{
+    z-index: 0;
+}
+
+main > .container > .row > #TarifH > h4 > ul > li {
+    font-size: 50px;
+}
+
+.mt-n30{
+    margin-top: -30rem;
+}
 @media screen and (min-width: 1430px){
     header > ul{
         margin-top: -4.2%;
