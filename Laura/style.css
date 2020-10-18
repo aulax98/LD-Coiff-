@@ -1,0 +1,72 @@
+header > ul{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    margin-top: -7.5%;
+}
+
+header > section{
+    text-align: center;
+    font-family: normal normal normal, sans-serif;
+}
+
+header > Section > h1{
+    font-size: 40px;
+    letter-spacing: 0.3em;
+}
+
+header > Section > h3{
+    letter-spacing: 0.4em;
+    margin-top: 80px;
+}
+
+header > ul > li > a{
+    text-decoration: none;
+    color: black;
+    transition: .4s;
+    font-style: italic;
+    font-weight: bold;
+}
+
+header > ul > li > a:hover{
+    color: rgb(161, 156, 156);
+    transition: .4s;
+}
+
+header {
+    position: sticky;
+}
+
+.jumbotron{
+    background: url(Screenshot_20201018-182935_Gallery.jpg) no-repeat center;
+    height: 70vh;
+    width: 100vw;
+    border-radius: 0;
+    position: fixed;
+    z-index: -1000;
+    margin: auto;
+}
+
+main{
+    z-index: 1;    
+    display: block;
+    width: 99.2vw;
+    background-color: white;
+    margin-top: 75vh;
+    padding: 10%;
+    padding-top: 50px;
+}
+
+
+@media screen and (min-width: 1430px){
+    header > ul{
+        margin-top: -4.2%;
+    }
+}
